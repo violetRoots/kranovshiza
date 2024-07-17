@@ -22,19 +22,19 @@ public class CraneController : MonoBehaviour
 
     private void Update()
     {
-        var elevation = Input.GetAxisRaw("Elevation"); 
+        var elevation = Input.GetAxis("Elevation"); 
         if (elevation != 0)
         {
             Elevate(elevation);
         }
 
-        var vertical = Input.GetAxisRaw("Vertical"); 
+        var vertical = Input.GetAxis("Vertical"); 
         if (vertical != 0)
         {
             MoveTrolley(vertical);
         }
 
-        var horizontal = Input.GetAxisRaw("Horizontal");
+        var horizontal = Input.GetAxis("Horizontal");
         if (horizontal != 0)
         {
             RotateCrane(horizontal);
